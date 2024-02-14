@@ -132,6 +132,9 @@ a {
   margin-top: 34px;
   background-color: #4475f2;
   color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /* Hero Right side */
@@ -139,6 +142,16 @@ a {
   position: relative;
   width: 720px;
   height: 650px;
+}
+
+.hero-top-books {
+  justify-content: center;
+  gap: 4rem;
+}
+
+.hero-bottom-books {
+  align-items: flex-end;
+  gap: 4rem;
 }
 
 .cover-bottom {
