@@ -46,6 +46,15 @@ body {
   color: #4475f2;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 a {
   text-decoration: none;
 }
@@ -91,13 +100,11 @@ a {
 }
 .hero-section-flex-position {
   width: 100%;
-  display: flex;
   justify-content: space-between;
 }
 
 /*Hero Left side*/
 .hero-section-left-container {
-  flex-direction: column;
   align-content: space-between;
   width: 80%;
 }
@@ -130,8 +137,6 @@ a {
 /* Hero Right side */
 .hero-section-right-container {
   position: relative;
-  flex-direction: column;
-  display: flex;
   width: 720px;
   height: 650px;
 }
