@@ -22,33 +22,43 @@
   </head>
   <body>
     <header id="home-header">
-      <nav class="hero-nav mr-120 d-flex-between">
-        <ul class="d-flex">
+      <nav class="hero-navigation mr-120 d-flex-between">
+        <ul class="hero-navigation__list d-flex">
           <li>
             <i class="fa-solid fa-book-open-reader fa-xl primary-color"></i>
           </li>
           <li>
-            <h1 class="font-size-18 font-weight-bold hero-website-name">
+            <h1
+              class="font-size-18 font-weight-bold hero-navigation__website-title"
+            >
               Lidia
             </h1>
           </li>
           <li>
-            <a href="" class="inactive-link-color">Feature</a>
+            <a href="" class="hero-navigation__link inactive-link-color"
+              >Feature</a
+            >
           </li>
           <li>
-            <a href="" class="inactive-link-color">Service</a>
+            <a href="" class="hero-navigation__link inactive-link-color"
+              >Service</a
+            >
           </li>
           <li>
-            <a href="" class="inactive-link-color">Review</a>
+            <a href="" class="hero-navigation__link inactive-link-color"
+              >Review</a
+            >
           </li>
           <li>
-            <a href="" class="inactive-link-color">Location</a>
+            <a href="" class="hero-navigation__link inactive-link-color"
+              >Location</a
+            >
           </li>
         </ul>
         <div>
           <button
             type="button"
-            class="btn-primary font-weight-bold hero-login-btn mr-120"
+            class="btn-primary font-weight-bold hero-navigation__login-btn mr-120"
           >
             Login
           </button>
@@ -56,85 +66,82 @@
       </nav>
     </header>
     <main id="home-main">
-      <section id="hero-section">
-        <div class="hero-section-flex-position d-flex-between">
-          <section id="hero-section-left">
-            <div class="hero-section-left-container d-flex-column">
-              <p class="hero-main-text font-weight-extrabold">
-                Search &amp; review your
-                <span class="hero-main-text-favbook primary-color"
-                  >fav book</span
-                >
-                effortlessly
-              </p>
-              <p class="hero-secondary-text">
-                Embark on a literary journey like never before with our
-                revolutionary library application! Introducing a seamless
-                experience that transcends traditional boundaries, where you can
-                effortlessly search your favorite books.
-              </p>
-              <button
-                type="button"
-                class="btn-primary hero-start-now-btn font-weight-bold d-flex"
-              >
-                Start now
-                <i class="fa-solid fa-arrow-right fa-xs"></i>
-              </button>
-            </div>
-          </section>
-          <section id="hero-section-right">
-            <div class="hero-section-right-container d-flex-column">
-              <div class="hero-top-books d-flex">
-                <picture>
-                  <source
-                    srcset="./images/talking-to-strangers-m.png"
-                    media="(min-width: 800px)"
-                  />
-                  <img
-                    src="./images/talking-to-strangers-s.png"
-                    alt="'Talking to strangers' book cover"
-                  />
-                </picture>
-                <picture>
-                  <source
-                    srcset="./images/the-midnight-library-m.png"
-                    media="(min-width: 800px)"
-                  />
-                  <img
-                    src="./images/the-midnight-library-s.png"
-                    alt="'The Midnight library' book cover"
-                  />
-                </picture>
-              </div>
-              <div class="hero-bottom-books d-flex">
-                <picture>
-                  <source
-                    srcset="./images/dompet-ayah-sepatu-ibu-m.png"
-                    media="(min-width: 800px)"
-                  />
-                  <img
-                    src="./images/dompet-ayah-sepatu-ibu-s.png"
-                    alt="'Dompet ayah sepatu ibu' book cover"
-                  />
-                </picture>
-                <picture>
-                  <source
-                    srcset="./images/the-visual-mba-m.png"
-                    media="(min-width: 800px)"
-                  />
-                  <img
-                    src="./images/the-visual-mba-s.png"
-                    alt="'The visual MBA' book cover"
-                  />
-                </picture>
-              </div>
-              <div class="cover-top"></div>
-              <div class="cover-bottom"></div>
-            </div>
-          </section>
-        </div>
+      <section id="hero-section" class="hero-content d-flex-between">
+        <section id="hero-section-left" class="hero-section-left d-flex-column">
+          <p class="hero-section-left__main-text font-weight-extrabold">
+            Search &amp; review your
+            <span class="hero-section-left__main-text--favbook primary-color"
+              >fav book</span
+            >
+            effortlessly
+          </p>
+          <p class="hero-section-left__secondary-text">
+            Embark on a literary journey like never before with our
+            revolutionary library application! Introducing a seamless experience
+            that transcends traditional boundaries, where you can effortlessly
+            search your favorite books.
+          </p>
+          <button
+            type="button"
+            class="btn-primary hero-section-left__start-now-btn font-weight-bold d-flex"
+          >
+            Start now
+            <i class="fa-solid fa-arrow-right fa-xs"></i>
+          </button>
+        </section>
+        <section
+          id="hero-section-right"
+          class="hero-section-right d-flex-column"
+        >
+          <div class="hero-section-right__top-books d-flex">
+            <picture>
+              <source
+                srcset="./images/talking-to-strangers-m.png"
+                media="(min-width: 800px)"
+              />
+              <img
+                src="./images/talking-to-strangers-s.png"
+                alt="'Talking to strangers' book cover"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="./images/the-midnight-library-m.png"
+                media="(min-width: 800px)"
+              />
+              <img
+                src="./images/the-midnight-library-s.png"
+                alt="'The Midnight library' book cover"
+              />
+            </picture>
+          </div>
+          <div class="hero-section-right__bottom-books d-flex">
+            <picture>
+              <source
+                srcset="./images/dompet-ayah-sepatu-ibu-m.png"
+                media="(min-width: 800px)"
+              />
+              <img
+                src="./images/dompet-ayah-sepatu-ibu-s.png"
+                alt="'Dompet ayah sepatu ibu' book cover"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="./images/the-visual-mba-m.png"
+                media="(min-width: 800px)"
+              />
+              <img
+                src="./images/the-visual-mba-s.png"
+                alt="'The visual MBA' book cover"
+              />
+            </picture>
+          </div>
+          <div class="hero-section-right__cover-top"></div>
+          <div class="hero-section-right__cover-bottom"></div>
+        </section>
       </section>
     </main>
-    <footer id="home-footer"></footer>
+    <footer id="home-footer" class="home-footer"></footer>
   </body>
 </html>
