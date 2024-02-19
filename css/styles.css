@@ -43,10 +43,10 @@ body {
 }
 
 .btn-primary:hover {
-  box-shadow: 0 0 1px 3px #2e2490 inset;
-}
-.btn-primary:active {
-  box-shadow: 0 0 3px 5px #2e2490 inset;
+  box-shadow: 0 3px 5px 1px #181e4b;
+  transform: scale(1.1);
+  transition-property: transform;
+  transition-duration: 0.5s;
 }
 
 .primary-color {
@@ -142,33 +142,49 @@ a {
 /* Hero Right side */
 .hero-section-right {
   position: relative;
-  width: 720px;
+  width: 45%;
   height: 650px;
 }
 
-.hero-section-right__top-books {
-  justify-content: center;
-  gap: 4rem;
+.hero-section-right__picture {
+  position: absolute;
 }
 
-.hero-section-right__bottom-books {
-  align-items: flex-end;
-  gap: 4rem;
+.hero-section-right__picture--dompet {
+  top: 32%;
+  right: 75%;
+}
+
+.hero-section-right__picture--mba {
+  bottom: 10%;
+  right: 45%;
+}
+
+.hero-section-right__picture--strangers {
+  top: 0;
+  right: 50%;
+}
+
+.hero-section-right__picture--midnight {
+  top: 20%;
+  right: 20%;
 }
 
 .hero-section-right__cover-bottom {
-  width: 100%;
-  height: 130%;
-  bottom: 3%;
+  width: 50%;
+  height: 750px;
+  right: 0;
+  top: 0;
   background-color: #3f6cde;
   clip-path: polygon(0% 100%, 65% 0%, 100% 0%, 100% 100%);
   position: absolute;
   z-index: -2;
 }
 .hero-section-right__cover-top {
-  width: 100%;
-  height: 130%;
-  bottom: 3%;
+  width: 50%;
+  height: 750px;
+  right: 0;
+  top: 0;
   background-color: #4475f2;
   clip-path: polygon(65% 100%, 0% 0%, 100% 0%, 100% 100%);
   position: absolute;
