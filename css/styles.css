@@ -43,10 +43,10 @@ body {
 }
 
 .btn-primary:hover {
-  box-shadow: 0 0 1px 3px #2e2490 inset;
-}
-.btn-primary:active {
-  box-shadow: 0 0 3px 5px #2e2490 inset;
+  box-shadow: 0 3px 5px 1px #181e4b;
+  transform: scale(1.1);
+  transition-property: transform;
+  transition-duration: 0.5s;
 }
 
 .primary-color {
