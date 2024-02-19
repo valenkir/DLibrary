@@ -142,23 +142,37 @@ a {
 /* Hero Right side */
 .hero-section-right {
   position: relative;
-  width: 720px;
+  width: 45%;
   height: 650px;
 }
 
-.hero-section-right__top-books {
-  justify-content: center;
-  gap: 4rem;
+.hero-section-right__picture {
+  position: absolute;
 }
 
-.hero-section-right__bottom-books {
-  align-items: flex-end;
-  gap: 4rem;
+.hero-section-right__picture--dompet {
+  top: 32%;
+  right: 75%;
+}
+
+.hero-section-right__picture--mba {
+  bottom: 10%;
+  right: 45%;
+}
+
+.hero-section-right__picture--strangers {
+  top: 0;
+  right: 50%;
+}
+
+.hero-section-right__picture--midnight {
+  top: 20%;
+  right: 20%;
 }
 
 .hero-section-right__cover-bottom {
   width: 50%;
-  height: 100%;
+  height: 750px;
   right: 0;
   top: 0;
   background-color: #3f6cde;
@@ -168,7 +182,7 @@ a {
 }
 .hero-section-right__cover-top {
   width: 50%;
-  height: 100%;
+  height: 750px;
   right: 0;
   top: 0;
   background-color: #4475f2;
