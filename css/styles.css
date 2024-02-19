@@ -157,18 +157,20 @@ a {
 }
 
 .hero-section-right__cover-bottom {
-  width: 100%;
-  height: 130%;
-  bottom: 3%;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  top: 0;
   background-color: #3f6cde;
   clip-path: polygon(0% 100%, 65% 0%, 100% 0%, 100% 100%);
   position: absolute;
   z-index: -2;
 }
 .hero-section-right__cover-top {
-  width: 100%;
-  height: 130%;
-  bottom: 3%;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  top: 0;
   background-color: #4475f2;
   clip-path: polygon(65% 100%, 0% 0%, 100% 0%, 100% 100%);
   position: absolute;
