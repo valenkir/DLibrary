@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="102"
+   height="102"
+   viewBox="0 0 102 102"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="C:\Users\fkost\AppData\Local\Temp\ink_ext_XXXXXX.svgBV3RJ2"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview730"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="0.25"
+     inkscape:cx="192.5"
+     inkscape:cy="192.5"
+     inkscape:window-width="2560"
+     inkscape:window-height="1334"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid853" />
+  </sodipodi:namedview>
+  <defs
+     id="defs725" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0.11914861,-0.25774643)">
+    <rect
+       x="-0.11914861"
+       y="0.25774643"
+       width="102"
+       height="102"
+       rx="26"
+       fill="#4475f2"
+       id="rect1547" />
+    <path
+       d="m 67.630851,50.195347 c 0.006,2.4747 -0.572,4.916 -1.687,7.125 -1.323,2.647 -3.357,4.8734 -5.874,6.4299 -2.517,1.5564 -5.417,2.3814 -8.377,2.3826 -2.474,0.0064 -4.916,-0.5718 -7.125,-1.6875 l -10.687,3.5625 3.5625,-10.6875 c -1.1158,-2.209 -1.694,-4.6503 -1.6875,-7.125 0.0011,-2.9593 0.8261,-5.8597 2.3826,-8.3765 1.5564,-2.5168 3.7824,-4.5506 6.4294,-5.8735 2.209,-1.1158 4.651,-1.694 7.125,-1.6875 h 0.938 c 3.908,0.2156 7.599,1.8651 10.367,4.6328 2.768,2.7677 4.417,6.459 4.633,10.3672 z"
+       stroke="#ffffff"
+       stroke-width="5"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       id="path1551"
+       style="fill:#4475f2;fill-opacity:1" />
+  </g>
+</svg>

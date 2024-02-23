@@ -13,12 +13,20 @@ body {
   margin-right: 120px;
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 .font-size-14 {
   font-size: 14px;
 }
 
 .font-size-18 {
   font-size: 18px;
+}
+
+.font-size-48 {
+  font-size: 48px;
 }
 
 .font-weight-regular {
@@ -51,6 +59,10 @@ body {
 
 .primary-color {
   color: #4475f2;
+}
+
+.color-text-black {
+  color: black;
 }
 
 .d-flex {
@@ -189,4 +201,31 @@ a {
   clip-path: polygon(65% 100%, 0% 0%, 100% 0%, 100% 100%);
   position: absolute;
   z-index: -1;
+}
+
+/*Features*/
+
+.feature-section {
+  margin-top: 170px;
+  margin-bottom: 170px;
+}
+
+.features-section-container {
+  margin-top: 90px;
+  text-align: center;
+  gap: 350px;
+}
+
+.feature-section-container__feature-description {
+  width: 15%;
+}
+
+.feature-section-container__feature-header {
+  margin-top: 20px;
+  margin-bottom: 28px;
+  font-size: 24px;
+}
+
+.feature-section-container__feature-text {
+  line-height: 1.9;
 }
