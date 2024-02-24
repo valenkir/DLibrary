@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -9,12 +9,24 @@ body {
 
 /*Helper classes*/
 
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-90 {
+  margin-top: 90px;
+}
+
 .mr-120 {
   margin-right: 120px;
 }
 
 .mb-10 {
   margin-bottom: 10px;
+}
+
+.gap-20 {
+  gap: 20%;
 }
 
 .font-size-14 {
@@ -31,6 +43,10 @@ body {
 
 .font-weight-regular {
   font-weight: 400;
+}
+
+.font-weight-medium {
+  font-weight: 500;
 }
 
 .font-weight-bold {
@@ -63,6 +79,10 @@ body {
 
 .color-text-black {
   color: black;
+}
+
+.line-height-1-9 {
+  line-height: 1.9;
 }
 
 .d-flex {
@@ -134,16 +154,13 @@ a {
 }
 
 .hero-section-left__secondary-text {
-  line-height: 1.9;
   width: 80%;
   letter-spacing: -4%;
-  margin-top: 30px;
 }
 
 .hero-section-left__start-now-btn {
   height: 60px;
   width: 200px;
-  margin-top: 34px;
   background-color: #4475f2;
   color: white;
   justify-content: center;
@@ -211,9 +228,7 @@ a {
 }
 
 .features-section-container {
-  margin-top: 90px;
   text-align: center;
-  gap: 350px;
 }
 
 .feature-section-container__feature-description {
@@ -226,6 +241,15 @@ a {
   font-size: 24px;
 }
 
-.feature-section-container__feature-text {
-  line-height: 1.9;
+/*Services*/
+.rent-info-section {
+  flex-wrap: wrap;
+}
+
+.rent-info-section__paragraph-container {
+  width: 25%;
+}
+
+.rent-info-section__h3 {
+  font-size: 32px;
 }
