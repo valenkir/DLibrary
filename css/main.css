@@ -8,7 +8,6 @@
 .hero-navigation {
   width: 100%;
   flex-direction: row;
-  align-items: center;
 }
 
 .hero-navigation__link {
@@ -65,7 +64,6 @@
   background-color: #4475f2;
   color: white;
   justify-content: center;
-  align-items: center;
   gap: 0.5rem;
 }
 
@@ -116,7 +114,6 @@
 /*Features*/
 
 .features-section-container {
-  text-align: center;
   gap: 25%;
 }
 
@@ -158,8 +155,6 @@
   width: 30.5%;
   height: 100%;
   border: 1px solid #dedede;
-  align-items: center;
-  text-align: center;
   overflow-y: hidden;
 }
 
@@ -183,4 +178,40 @@
   height: 405px;
   border: none;
   margin-bottom: 240px;
+}
+
+/*Footer*/
+
+.home-footer-media-section {
+  justify-content: space-around;
+}
+
+.home-footer-media-section__social-icons {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+/*the facebook icon looks cropped*/
+/* .home-footer-media-section__social-icons--remove-fill {
+  fill: none;
+  stroke: black;
+  stroke-width: 42px;
+} */
+
+.home-footer-media-section__h4 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.home-footer-rights-section {
+  height: 120px;
+  background-color: #4475f2;
+}
+
+.home-footer-rights-section__text {
+  display: inline-block;
+  margin-top: 50px;
+  color: white;
+  font-size: 14px;
 }

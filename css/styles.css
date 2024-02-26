@@ -4,7 +4,7 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
   color: #5e6282;
-  padding: 70px 0 0 120px;
+  padding-top: 70px;
 }
 
 /*Helper classes*/
@@ -27,6 +27,10 @@ body {
 
 .mb-10 {
   margin-bottom: 10px;
+}
+
+.ms-120 {
+  margin-left: 120px;
 }
 
 .gap-20 {
@@ -93,6 +97,10 @@ body {
   text-transform: uppercase;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .shadow {
   box-shadow: 0.4px 0.7px 3.3px rgba(0, 0, 0, 0.027),
     2.9px 5.7px 8px rgba(0, 0, 0, 0.04), 8.6px 17.1px 16px rgba(0, 0, 0, 0.046),
@@ -111,6 +119,10 @@ body {
 .d-flex-between {
   display: flex;
   justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
 }
 
 a {
