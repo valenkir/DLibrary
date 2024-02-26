@@ -183,7 +183,7 @@
 /*Footer*/
 
 .home-footer-media-section {
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .home-footer-media-section__social-icons {
