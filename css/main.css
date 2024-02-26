@@ -1,4 +1,10 @@
 /* Navigation */
+
+.hero-navigation__logo {
+  position: relative;
+  bottom: 15%;
+}
+
 .hero-navigation {
   width: 100%;
   flex-direction: row;
@@ -119,6 +125,7 @@
 
 .features-section-container {
   text-align: center;
+  gap: 25%;
 }
 
 .feature-section-container__feature-description {
@@ -175,4 +182,15 @@
 
 .review-card__review-text {
   width: 55%;
+}
+
+/*Location*/
+.location-section__map {
+  width: 100%;
+  height: 405px;
+  border: none;
+  box-shadow: 0.4px 0.7px 3.3px rgba(0, 0, 0, 0.027),
+    2.9px 5.7px 8px rgba(0, 0, 0, 0.04), 8.6px 17.1px 16px rgba(0, 0, 0, 0.046),
+    20.2px 40px 31.6px rgba(0, 0, 0, 0.051), 59px 117px 80px rgba(0, 0, 0, 0.06);
+  margin-bottom: 240px;
 }
