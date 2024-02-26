@@ -81,12 +81,12 @@
 }
 
 .hero-section-right__picture--dompet {
-  top: 32%;
+  top: 28%;
   right: 75%;
 }
 
 .hero-section-right__picture--mba {
-  bottom: 10%;
+  bottom: 15%;
   right: 45%;
 }
 
@@ -96,27 +96,19 @@
 }
 
 .hero-section-right__picture--midnight {
-  top: 20%;
+  top: 15%;
   right: 20%;
 }
 
 .hero-section-right__cover-bottom {
-  width: 50%;
-  height: 750px;
   right: 0;
   top: 0;
-  background-color: #3f6cde;
-  clip-path: polygon(0% 100%, 65% 0%, 100% 0%, 100% 100%);
   position: absolute;
   z-index: -2;
 }
 .hero-section-right__cover-top {
-  width: 50%;
-  height: 750px;
   right: 0;
   top: 0;
-  background-color: #4475f2;
-  clip-path: polygon(65% 100%, 0% 0%, 100% 0%, 100% 100%);
   position: absolute;
   z-index: -1;
 }
