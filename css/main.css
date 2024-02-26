@@ -130,6 +130,10 @@
   font-size: 24px;
 }
 
+.feature-section-container__feature-img {
+  filter: drop-shadow(3px 5px 10px rgb(0 0 0 / 0.3));
+}
+
 /*Services*/
 .rent-info-section {
   flex-wrap: wrap;
@@ -154,9 +158,6 @@
   width: 30.5%;
   height: 100%;
   border: 1px solid #dedede;
-  box-shadow: 0.4px 0.7px 3.3px rgba(0, 0, 0, 0.027),
-    2.9px 5.7px 8px rgba(0, 0, 0, 0.04), 8.6px 17.1px 16px rgba(0, 0, 0, 0.046),
-    20.2px 40px 31.6px rgba(0, 0, 0, 0.051), 59px 117px 80px rgba(0, 0, 0, 0.06);
   align-items: center;
   text-align: center;
   overflow-y: hidden;
@@ -181,8 +182,5 @@
   width: 100%;
   height: 405px;
   border: none;
-  box-shadow: 0.4px 0.7px 3.3px rgba(0, 0, 0, 0.027),
-    2.9px 5.7px 8px rgba(0, 0, 0, 0.04), 8.6px 17.1px 16px rgba(0, 0, 0, 0.046),
-    20.2px 40px 31.6px rgba(0, 0, 0, 0.051), 59px 117px 80px rgba(0, 0, 0, 0.06);
   margin-bottom: 240px;
 }
