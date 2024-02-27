@@ -76,6 +76,26 @@
 
 .hero-section-right__picture {
   position: absolute;
+  /*transition-duration checks all properties of the element for which it is applied and if any property changes, transition-duration is applied*/
+  /*the first value is the duration, the second is the delay*/
+  transition: 2000ms transform ease-in-out, 2000ms filter ease-in-out;
+  animation: makeBooksVisible;
+  animation-duration: 3000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes makeBooksVisible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.hero-section-right__picture:hover {
+  transform: scale(1.1);
+  filter: hue-rotate(-0.25turn);
 }
 
 .hero-section-right__picture--dompet {
@@ -129,6 +149,23 @@
 
 .feature-section-container__feature-img {
   filter: drop-shadow(3px 5px 10px rgb(0 0 0 / 0.3));
+  animation-name: tiltImage;
+  animation-duration: 1500ms;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  /*Move it to the helper class*/
+  transition-duration: 2000ms;
+  transition-property: transform;
+}
+
+.feature-section-container__feature-img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes tiltImage {
+  to {
+    transform: rotate(40deg);
+  }
 }
 
 /*Services*/
@@ -144,6 +181,44 @@
   font-size: 32px;
 }
 
+.rent-info__img {
+  transition-property: transform;
+}
+
+.rent-info__img--move-left {
+  animation-name: flyFromLeft;
+  animation-duration: 3500ms;
+  transition-duration: 3000ms;
+}
+
+.rent-info__img--move-right {
+  animation-name: flyFromRight;
+  animation-duration: 3500ms;
+  transition-duration: 3000ms;
+}
+
+@keyframes flyFromLeft {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes flyFromRight {
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.rent-info__img:hover {
+  transform: scale(1.1);
+}
+
 /*Reviews*/
 
 .review-cards-section {
@@ -156,6 +231,12 @@
   height: 100%;
   border: 1px solid #dedede;
   overflow-y: hidden;
+  transition-duration: 1000ms;
+  transition-property: transform;
+}
+
+.review-card:hover {
+  transform: rotate(5deg);
 }
 
 .review-card__review-avatar {
