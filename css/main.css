@@ -1,3 +1,38 @@
+/*Animations*/
+
+@keyframes makeBooksVisible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes tiltImage {
+  to {
+    transform: rotate(40deg);
+  }
+}
+
+@keyframes flyFromLeft {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes flyFromRight {
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 /* Navigation */
 
 .hero-navigation__logo {
@@ -30,6 +65,10 @@
   color: black;
   width: 138px;
   height: 44px;
+}
+
+.hero-navigation__login-btn:active {
+  background-color: #e7e7e7;
 }
 
 /*Hero Section*/
@@ -67,6 +106,10 @@
   gap: 0.5rem;
 }
 
+.hero-section-left__start-now-btn:active {
+  background-color: #3c62c2;
+}
+
 /* Hero Right side */
 .hero-section-right {
   position: relative;
@@ -82,15 +125,6 @@
   animation: makeBooksVisible;
   animation-duration: 3000ms;
   animation-fill-mode: forwards;
-}
-
-@keyframes makeBooksVisible {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100%;
-  }
 }
 
 .hero-section-right__picture:hover {
@@ -153,19 +187,12 @@
   animation-duration: 1500ms;
   animation-direction: alternate;
   animation-iteration-count: 2;
-  /*Move it to the helper class*/
-  transition-duration: 2000ms;
+  transition-duration: 1000ms;
   transition-property: transform;
 }
 
 .feature-section-container__feature-img:hover {
-  transform: scale(1.1);
-}
-
-@keyframes tiltImage {
-  to {
-    transform: rotate(40deg);
-  }
+  transform: rotate(5deg);
 }
 
 /*Services*/
@@ -197,24 +224,6 @@
   transition-duration: 3000ms;
 }
 
-@keyframes flyFromLeft {
-  from {
-    transform: translateX(-1000px);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-@keyframes flyFromRight {
-  from {
-    transform: translateX(1000px);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
 .rent-info__img:hover {
   transform: scale(1.1);
 }
@@ -231,12 +240,9 @@
   height: 100%;
   border: 1px solid #dedede;
   overflow-y: hidden;
-  transition-duration: 1000ms;
-  transition-property: transform;
 }
 
 .review-card:hover {
-  transform: rotate(5deg);
 }
 
 .review-card__review-avatar {

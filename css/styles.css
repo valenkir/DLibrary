@@ -72,12 +72,11 @@ body {
 .btn-primary {
   border: none;
   border-radius: 10px;
-  transition-property: transform;
+  transition-property: transform, background-color;
   transition-duration: 1000ms;
 }
 
 .btn-primary:hover {
-  box-shadow: 0 3px 5px 1px #181e4b;
   transform: scale(1.1);
 }
 
