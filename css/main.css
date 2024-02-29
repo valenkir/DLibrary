@@ -17,7 +17,7 @@
 
 @keyframes flyFromLeft {
   from {
-    transform: translateX(-1000px);
+    transform: translateX(-50rem);
   }
   to {
     transform: translateX(0);
@@ -26,7 +26,7 @@
 
 @keyframes flyFromRight {
   from {
-    transform: translateX(1000px);
+    transform: translateX(60rem);
   }
   to {
     transform: translateX(0);
