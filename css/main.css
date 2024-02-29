@@ -242,9 +242,6 @@
   overflow-y: hidden;
 }
 
-.review-card:hover {
-}
-
 .review-card__review-avatar {
   width: 149px;
   height: 149px;
