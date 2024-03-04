@@ -4,7 +4,7 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
   color: #5e6282;
-  padding-top: 70px;
+  padding-top: 4.4rem;
 }
 
 /*Helper classes*/
@@ -84,6 +84,10 @@ body {
   color: #4475f2;
 }
 
+.primary-bg {
+  background-color: #4475f2;
+}
+
 .color-text-black {
   color: black;
 }
@@ -110,8 +114,7 @@ body {
   display: flex;
 }
 
-.d-flex-column {
-  display: flex;
+.flex-column {
   flex-direction: column;
 }
 
@@ -134,4 +137,41 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.user-input {
+  height: 40px;
+  border-radius: 4px;
+  border: 1.5px solid #dedede;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #5e6282;
+  font-weight: 500;
+  padding-left: 14px;
+}
+
+.user-input::placeholder {
+  font-size: 14px;
+  color: #9c9c9c;
+  margin-left: 0.5rem;
+}
+
+.user-input:focus {
+  border-color: #4475f2;
+}
+
+.user-input:invalid {
+  border-color: rgb(154, 3, 3);
+}
+
+.user-input__password-icon {
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 0.5rem;
+}
+
+.user-input__password-icon:hover {
+  cursor: pointer;
 }

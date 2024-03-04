@@ -82,6 +82,7 @@
           <button
             type="button"
             class="btn-primary font-weight-bold hero-navigation__login-btn mr-120"
+            onclick="location.href='./pages/login.html'"
           >
             Login
           </button>
@@ -90,7 +91,10 @@
     </header>
     <main id="home-main" class="ms-120">
       <section id="hero-section" class="hero-content d-flex-between">
-        <section id="hero-section-left" class="hero-section-left d-flex-column">
+        <section
+          id="hero-section-left"
+          class="hero-section-left d-flex flex-column"
+        >
           <p class="hero-section-left__main-text font-weight-extrabold">
             Search &amp; review your
             <span class="hero-section-left__main-text--favbook primary-color"
@@ -106,7 +110,7 @@
           </p>
           <button
             type="button"
-            class="btn-primary hero-section-left__start-now-btn font-weight-bold d-flex items-center mt-30"
+            class="btn-primary hero-section-left__start-now-btn primary-bg font-weight-bold d-flex items-center mt-30"
           >
             Start now
             <i class="fa-solid fa-arrow-right fa-xs"></i>
@@ -299,7 +303,7 @@
           id="review-cards"
           class="mr-120 review-cards-section d-flex mt-90 text-center"
         >
-          <div class="review-card items-center d-flex-column shadow">
+          <div class="review-card items-center d-flex flex-column shadow">
             <img
               src="./images/ahmad-avatar.png"
               alt="College student avatar"
@@ -318,7 +322,7 @@
               >College Student</span
             >
           </div>
-          <div class="review-card items-center d-flex-column shadow">
+          <div class="review-card items-center d-flex flex-column shadow">
             <img
               src="./images/avatar-card-2.png"
               alt="School student avatar"
@@ -337,7 +341,7 @@
               >School Student</span
             >
           </div>
-          <div class="review-card d-flex-column items-center shadow">
+          <div class="review-card d-flex flex-column items-center shadow">
             <img
               src="./images/developer-avatar.png"
               alt="ERP developer avatar"
@@ -450,7 +454,7 @@
       </section>
       <section
         id="home-footer-rights-section"
-        class="home-footer-rights-section mt-90 text-center"
+        class="home-footer-rights-section primary-bg mt-90 text-center"
       >
         <p class="home-footer-rights-section__text font-weight-bold">
           © 2024 Lidia. All rights reserved.

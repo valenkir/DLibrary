@@ -1,0 +1,43 @@
+.login-grid-container {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.login-header {
+  grid-area: header;
+  margin-bottom: 50px;
+}
+
+.login-main {
+  grid-area: main;
+}
+
+.login-form {
+  height: 452px;
+  width: 25rem;
+  border-top: 2px solid #4475f2;
+  border-radius: 5px;
+  padding: 2.4rem 2.2rem 0 2.2rem;
+  margin-bottom: 50px;
+}
+
+.login-form__title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.login-form__password-container {
+  position: relative;
+}
+
+.login-form__button {
+  height: 43px;
+  color: white;
+}
+
+.login-footer {
+  margin-bottom: 40px;
+}

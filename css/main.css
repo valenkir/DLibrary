@@ -100,7 +100,6 @@
 .hero-section-left__start-now-btn {
   height: 60px;
   width: 200px;
-  background-color: #4475f2;
   color: white;
   justify-content: center;
   gap: 0.5rem;
@@ -293,7 +292,6 @@
 
 .home-footer-rights-section {
   height: 120px;
-  background-color: #4475f2;
 }
 
 .home-footer-rights-section__text {
