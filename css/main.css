@@ -276,12 +276,15 @@
   margin-right: 0.5rem;
 }
 
-/*the facebook icon looks cropped*/
-/* .home-footer-media-section__social-icons--remove-fill {
+.home-footer-media-section__social-icons--remove-fill {
   fill: none;
   stroke: black;
   stroke-width: 42px;
-} */
+}
+
+.home-footer-media-section__social-icons--margin {
+  margin-right: 1.5rem;
+}
 
 .home-footer-media-section__h4 {
   font-size: 24px;

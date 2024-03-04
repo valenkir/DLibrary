@@ -120,6 +120,14 @@ body {
   justify-content: space-between;
 }
 
+.flex-justify-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
 .items-center {
   align-items: center;
 }
