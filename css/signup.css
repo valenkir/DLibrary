@@ -1,0 +1,85 @@
+.signup-grid-container {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.signup-header {
+  grid-area: header;
+  margin-bottom: 50px;
+}
+
+.signup-main {
+  grid-area: main;
+}
+
+.signup-form__title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.signup-form {
+  height: 740px;
+  width: 46rem;
+  border-top: 2px solid #4475f2;
+  border-radius: 5px;
+  padding: 2.4rem 2.2rem 0 2.2rem;
+  margin-bottom: 50px;
+}
+
+.sign-up-fields {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "left right" "button button";
+  column-gap: 30px;
+}
+
+.left-form-section {
+  grid-area: left;
+}
+
+.right-form-section {
+  grid-area: right;
+}
+
+.right-form-section__radio-buttons-container {
+  height: 45px;
+  margin-top: 10px;
+  /* why chrome why */
+  margin-bottom: 2px;
+  align-items: center;
+}
+
+.radio-buttons-container__label {
+  margin-right: 1.25rem;
+}
+
+.radio-buttons-container__radio-button {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-right: 10px;
+  appearance: none;
+  border: 2.5px solid #dedede;
+  border-radius: 50%;
+}
+
+.radio-buttons-container__radio-button:checked {
+  border: none;
+  box-shadow: 0 0 0 5px #4475f2 inset;
+}
+
+.signup-form__button {
+  grid-area: button;
+  height: 43px;
+  color: white;
+}
+
+.signup-form__password-container {
+  position: relative;
+}
+
+.signup-footer {
+  margin-bottom: 40px;
+}
