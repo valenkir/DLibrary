@@ -181,7 +181,7 @@
 }
 
 .feature-section-container__feature-img {
-  filter: drop-shadow(3px 5px 10px rgb(0 0 0 / 0.3));
+  filter: drop-shadow(3px 5px 10px #0000004d);
   animation-name: tiltImage;
   animation-duration: 1500ms;
   animation-direction: alternate;
