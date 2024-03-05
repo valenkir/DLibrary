@@ -164,14 +164,21 @@ a {
   border-color: #9a0303;
 }
 
-.user-input__password-icon {
+.user-input__field-icon {
   height: 1rem;
   width: 1rem;
-  position: absolute;
   bottom: 1rem;
   right: 0.5rem;
 }
 
-.user-input__password-icon:hover {
+.user-input__field-icon:hover {
   cursor: pointer;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
 }

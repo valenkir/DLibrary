@@ -44,11 +44,12 @@
   grid-area: right;
 }
 
-.right-form-section__radio-buttons-container {
+.date-field-container {
+}
+
+.radio-buttons-container {
   height: 45px;
   margin-top: 10px;
-  /* why chrome why */
-  margin-bottom: 2px;
   align-items: center;
 }
 
@@ -74,10 +75,6 @@
   grid-area: button;
   height: 43px;
   color: white;
-}
-
-.signup-form__password-container {
-  position: relative;
 }
 
 .signup-footer {

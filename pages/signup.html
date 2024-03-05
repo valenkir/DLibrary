@@ -97,7 +97,7 @@
               class="user-input"
               maxlength="100"
             />
-            <div class="signup-form__password-container d-flex flex-column">
+            <div class="d-flex flex-column position-relative">
               <label
                 for="password-field"
                 class="font-weight-bold color-text-black mt-30"
@@ -106,7 +106,7 @@
               <img
                 src="../images/hide-password.svg"
                 alt="Hide password button"
-                class="user-input__password-icon"
+                class="user-input__field-icon position-absolute"
               />
               <input
                 id="password-field"
@@ -122,7 +122,7 @@
             class="right-form-section d-flex flex-column"
           >
             <label
-              for="fullname-field"
+              for="nik-field"
               class="font-weight-bold color-text-black mt-30"
               >NIK</label
             >
@@ -144,16 +144,29 @@
               placeholder="e.g. alfian.ganteng@gmail.com"
               class="user-input"
             />
-            <label
-              for="date-of-birth-field"
-              class="font-weight-bold color-text-black mt-30"
-              >Born</label
-            >
-            <input id="date-of-birth-field" type="date" class="user-input" />
+            <div class="d-flex flex-column position-relative">
+              <label
+                for="date-of-birth-field"
+                class="font-weight-bold color-text-black mt-30"
+                >Born</label
+              >
+              <img
+                src="../images/datepicker.svg"
+                alt="Datepicker"
+                class="user-input__field-icon position-absolute"
+              />
+              <input
+                id="date-of-birth-field"
+                name="date"
+                type="text"
+                class="user-input right-form-section__date-input"
+                placeholder="MM/DD/YYYY"
+              />
+            </div>
 
             <fieldset class="mt-30">
               <legend class="font-weight-bold color-text-black">Gender</legend>
-              <div class="d-flex right-form-section__radio-buttons-container">
+              <div class="d-flex radio-buttons-container">
                 <input
                   id="male"
                   name="gender"
@@ -177,7 +190,7 @@
               </div>
             </fieldset>
 
-            <div class="signup-form__password-container d-flex flex-column">
+            <div class="position-relative d-flex flex-column">
               <label
                 for="confirm-password-field"
                 class="font-weight-bold color-text-black mt-30"
@@ -186,7 +199,7 @@
               <img
                 src="../images/hide-password.svg"
                 alt="Hide password button"
-                class="user-input__password-icon"
+                class="user-input__field-icon position-absolute"
               />
               <input
                 id="confirm-password-field"
