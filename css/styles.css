@@ -5,6 +5,13 @@
 * Browsers: last 20 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 20 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 body {
@@ -188,6 +195,7 @@ a {
   color: #5e6282;
   font-weight: 500;
   padding-left: 14px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -225,6 +233,22 @@ a {
   border-color: #4475f2;
 }
 
+.user-input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.user-input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.user-input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.user-input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
 .user-input:focus::placeholder {
   color: transparent;
 }
@@ -234,6 +258,14 @@ a {
 }
 
 .user-input:invalid:focus {
+  border-color: #9a0303;
+}
+
+.user-input:invalid:not(focus):not(:-moz-placeholder-shown) {
+  border-color: #9a0303;
+}
+
+.user-input:invalid:not(focus):not(:-ms-input-placeholder) {
   border-color: #9a0303;
 }
 
