@@ -71,6 +71,7 @@
               class="user-input"
               maxlength="22"
               minlength="2"
+              required
             />
             <label
               for="phone-field"
@@ -114,6 +115,7 @@
                 placeholder="e.g. 4kuBu7uhM3dk1t"
                 class="user-input"
                 minlength="8"
+                required
               />
             </div>
           </section>
@@ -143,22 +145,18 @@
               type="email"
               placeholder="e.g. alfian.ganteng@gmail.com"
               class="user-input"
+              required
             />
-            <div class="d-flex flex-column position-relative">
+            <div class="d-flex flex-column position-relative mt-30">
               <label
                 for="date-of-birth-field"
-                class="font-weight-bold color-text-black mt-30"
+                class="font-weight-bold color-text-black"
                 >Born</label
               >
-              <img
-                src="../images/datepicker.svg"
-                alt="Datepicker"
-                class="user-input__field-icon position-absolute"
-              />
               <input
                 id="date-of-birth-field"
                 name="date"
-                type="text"
+                type="date"
                 class="user-input"
                 placeholder="MM/DD/YYYY"
               />
@@ -190,10 +188,10 @@
               </div>
             </fieldset>
 
-            <div class="position-relative d-flex flex-column">
+            <div class="position-relative d-flex flex-column mt-30">
               <label
                 for="confirm-password-field"
-                class="font-weight-bold color-text-black mt-30"
+                class="font-weight-bold color-text-black"
                 >Confirm password</label
               >
               <img
@@ -207,6 +205,7 @@
                 placeholder="e.g. 4kuBu7uhM3dk1t"
                 class="user-input"
                 minlength="8"
+                required
               />
             </div>
           </section>

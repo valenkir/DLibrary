@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 20 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 body {
@@ -72,11 +79,19 @@ body {
 .btn-primary {
   border: none;
   border-radius: 10px;
+  -webkit-transition-property: background-color, -webkit-transform;
+  transition-property: background-color, -webkit-transform;
+  -o-transition-property: transform, background-color;
   transition-property: transform, background-color;
+  transition-property: transform, background-color, -webkit-transform;
+  -webkit-transition-duration: 1000ms;
+  -o-transition-duration: 1000ms;
   transition-duration: 1000ms;
 }
 
 .btn-primary:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
 
@@ -105,33 +120,58 @@ body {
 }
 
 .shadow {
+  -webkit-box-shadow: 0.4px 0.7px 3.3px #00000007, 2.9px 5.7px 8px #0000000a,
+    8.6px 17.1px 16px #0000000c, 20.2px 40px 31.6px #0000000d,
+    59px 117px 80px #0000000f;
   box-shadow: 0.4px 0.7px 3.3px #00000007, 2.9px 5.7px 8px #0000000a,
     8.6px 17.1px 16px #0000000c, 20.2px 40px 31.6px #0000000d,
     59px 117px 80px #0000000f;
 }
 
 .d-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .d-flex-between {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .flex-justify-evenly {
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 
 .flex-align-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .items-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -148,6 +188,31 @@ a {
   color: #5e6282;
   font-weight: 500;
   padding-left: 14px;
+  box-sizing: border-box;
+}
+
+.user-input::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #9c9c9c;
+  margin-left: 0.5rem;
+}
+
+.user-input::-moz-placeholder {
+  font-size: 14px;
+  color: #9c9c9c;
+  margin-left: 0.5rem;
+}
+
+.user-input:-ms-input-placeholder {
+  font-size: 14px;
+  color: #9c9c9c;
+  margin-left: 0.5rem;
+}
+
+.user-input::-ms-input-placeholder {
+  font-size: 14px;
+  color: #9c9c9c;
+  margin-left: 0.5rem;
 }
 
 .user-input::placeholder {
@@ -160,18 +225,35 @@ a {
   border-color: #4475f2;
 }
 
-.user-input:invalid {
+.user-input:focus::placeholder {
+  color: transparent;
+}
+
+.user-input:invalid:not(focus) {
+  border-color: #dedede;
+}
+
+.user-input:invalid:focus {
+  border-color: #9a0303;
+}
+
+.user-input:invalid:not(focus):not(:placeholder-shown) {
   border-color: #9a0303;
 }
 
 .user-input__field-icon {
   height: 1rem;
   width: 1rem;
-  bottom: 1rem;
-  right: 0.5rem;
+  bottom: 0.7rem;
+  right: 0.3rem;
 }
 
 .user-input__field-icon:hover {
+  cursor: pointer;
+}
+
+.user-input::-webkit-calendar-picker-indicator {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path fill="%235E6282" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
   cursor: pointer;
 }
 

@@ -1,4 +1,20 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 20 version
+*/
+
 /*Animations*/
+
+@-webkit-keyframes makeBooksVisible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
 
 @keyframes makeBooksVisible {
   from {
@@ -9,26 +25,60 @@
   }
 }
 
+@-webkit-keyframes tiltImage {
+  to {
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+  }
+}
+
 @keyframes tiltImage {
   to {
+    -webkit-transform: rotate(40deg);
     transform: rotate(40deg);
+  }
+}
+
+@-webkit-keyframes flyFromLeft {
+  from {
+    -webkit-transform: translateX(-50rem);
+    transform: translateX(-50rem);
+  }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 @keyframes flyFromLeft {
   from {
+    -webkit-transform: translateX(-50rem);
     transform: translateX(-50rem);
   }
   to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes flyFromRight {
+  from {
+    -webkit-transform: translateX(60rem);
+    transform: translateX(60rem);
+  }
+  to {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
 
 @keyframes flyFromRight {
   from {
+    -webkit-transform: translateX(60rem);
     transform: translateX(60rem);
   }
   to {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
@@ -42,6 +92,10 @@
 
 .hero-navigation {
   width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -78,6 +132,8 @@
 
 /*Hero Left side*/
 .hero-section-left {
+  -webkit-align-content: space-between;
+  -ms-flex-line-pack: justify;
   align-content: space-between;
   width: 40%;
 }
@@ -101,6 +157,9 @@
   height: 60px;
   width: 200px;
   color: white;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   gap: 0.5rem;
 }
@@ -120,14 +179,27 @@
   position: absolute;
   /*transition-duration checks all properties of the element for which it is applied and if any property changes, transition-duration is applied*/
   /*the first value is the duration, the second is the delay*/
+  -webkit-transition: 2000ms -webkit-transform ease-in-out,
+    2000ms -webkit-filter ease-in-out;
+  transition: 2000ms -webkit-transform ease-in-out,
+    2000ms -webkit-filter ease-in-out;
+  -o-transition: 2000ms transform ease-in-out, 2000ms filter ease-in-out;
   transition: 2000ms transform ease-in-out, 2000ms filter ease-in-out;
+  transition: 2000ms transform ease-in-out, 2000ms filter ease-in-out,
+    2000ms -webkit-transform ease-in-out, 2000ms -webkit-filter ease-in-out;
+  -webkit-animation: makeBooksVisible;
   animation: makeBooksVisible;
+  -webkit-animation-duration: 3000ms;
   animation-duration: 3000ms;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
 .hero-section-right__picture:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
+  -webkit-filter: hue-rotate(-0.25turn);
   filter: hue-rotate(-0.25turn);
 }
 
@@ -181,21 +253,36 @@
 }
 
 .feature-section-container__feature-img {
+  -webkit-filter: drop-shadow(3px 5px 10px #0000004d);
   filter: drop-shadow(3px 5px 10px #0000004d);
+  -webkit-animation-name: tiltImage;
   animation-name: tiltImage;
+  -webkit-animation-duration: 1500ms;
   animation-duration: 1500ms;
+  -webkit-animation-direction: alternate;
   animation-direction: alternate;
+  -webkit-animation-iteration-count: 2;
   animation-iteration-count: 2;
+  -webkit-transition-duration: 1000ms;
+  -o-transition-duration: 1000ms;
   transition-duration: 1000ms;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
   transition-property: transform;
+  transition-property: transform, -webkit-transform;
 }
 
 .feature-section-container__feature-img:hover {
+  -webkit-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
   transform: rotate(5deg);
 }
 
 /*Services*/
 .rent-info-section {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -208,22 +295,36 @@
 }
 
 .rent-info__img {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
   transition-property: transform;
+  transition-property: transform, -webkit-transform;
 }
 
 .rent-info__img--move-left {
+  -webkit-animation-name: flyFromLeft;
   animation-name: flyFromLeft;
+  -webkit-animation-duration: 3500ms;
   animation-duration: 3500ms;
+  -webkit-transition-duration: 3000ms;
+  -o-transition-duration: 3000ms;
   transition-duration: 3000ms;
 }
 
 .rent-info__img--move-right {
+  -webkit-animation-name: flyFromRight;
   animation-name: flyFromRight;
+  -webkit-animation-duration: 3500ms;
   animation-duration: 3500ms;
+  -webkit-transition-duration: 3000ms;
+  -o-transition-duration: 3000ms;
   transition-duration: 3000ms;
 }
 
 .rent-info__img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -266,6 +367,9 @@
 /*Footer*/
 
 .home-footer-media-section {
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 

@@ -1,17 +1,33 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 20 version
+*/
+
 .signup-grid-container {
+  display: -ms-grid;
   display: grid;
   grid-template-areas: "header" "main" "footer";
+  -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   justify-items: center;
 }
 
 .signup-header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: header;
   margin-bottom: 50px;
 }
 
 .signup-main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: main;
 }
 
@@ -30,23 +46,34 @@
 }
 
 .sign-up-fields {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 30px 1fr;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "left right" "button button";
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
   column-gap: 30px;
 }
 
 .left-form-section {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: left;
 }
 
 .right-form-section {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: right;
 }
 
 .radio-buttons-container {
-  height: 45px;
+  height: 40px;
   margin-top: 10px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -58,6 +85,8 @@
   width: 1.3rem;
   height: 1.3rem;
   margin-right: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   border: 2.5px solid #dedede;
   border-radius: 50%;
@@ -65,10 +94,14 @@
 
 .radio-buttons-container__radio-button:checked {
   border: none;
+  -webkit-box-shadow: 0 0 0 5px #4475f2 inset;
   box-shadow: 0 0 0 5px #4475f2 inset;
 }
 
 .signup-form__button {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: button;
   height: 43px;
   color: white;
