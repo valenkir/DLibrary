@@ -2,14 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 20 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 20 version
+* Browsers: last 25 version
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
@@ -85,6 +78,7 @@ body {
 
 .btn-primary {
   border: none;
+  -webkit-border-radius: 10px;
   border-radius: 10px;
   -webkit-transition-property: background-color, -webkit-transform;
   transition-property: background-color, -webkit-transform;
@@ -188,6 +182,7 @@ a {
 
 .user-input {
   height: 40px;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
   border: 1.5px solid #dedede;
   margin-top: 10px;
@@ -285,6 +280,7 @@ a {
 }
 
 .user-input::-webkit-calendar-picker-indicator {
+  -webkit-appearance: none;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path fill="%235E6282" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
   cursor: pointer;
 }

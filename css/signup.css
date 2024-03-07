@@ -2,14 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 20 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 20 version
+* Browsers: last 25 version
 */
 
 .signup-grid-container {
@@ -47,6 +40,7 @@
   height: 740px;
   width: 46rem;
   border-top: 2px solid #4475f2;
+  -webkit-border-radius: 5px;
   border-radius: 5px;
   padding: 2.4rem 2.2rem 0 2.2rem;
   margin-bottom: 50px;
@@ -96,6 +90,7 @@
   -moz-appearance: none;
   appearance: none;
   border: 2.5px solid #dedede;
+  -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 

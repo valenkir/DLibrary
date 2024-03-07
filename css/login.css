@@ -2,7 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 20 version
+* Browsers: last 25 version
 */
 
 .login-grid-container {
@@ -35,6 +35,7 @@
   height: 452px;
   width: 25rem;
   border-top: 2px solid #4475f2;
+  -webkit-border-radius: 5px;
   border-radius: 5px;
   padding: 2.4rem 2.2rem 0 2.2rem;
   margin-bottom: 50px;

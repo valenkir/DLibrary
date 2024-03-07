@@ -2,7 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 20 version
+* Browsers: last 25 version
 */
 
 /*Animations*/
@@ -184,7 +184,13 @@
   transition: 2000ms -webkit-transform ease-in-out,
     2000ms -webkit-filter ease-in-out;
   -o-transition: 2000ms transform ease-in-out, 2000ms filter ease-in-out;
+  -webkit-transition: 2000ms -webkit-transform ease-in-out,
+    2000ms -webkit-filter ease-in-out;
+  transition: 2000ms -webkit-transform ease-in-out,
+    2000ms -webkit-filter ease-in-out;
   transition: 2000ms transform ease-in-out, 2000ms filter ease-in-out;
+  transition: 2000ms transform ease-in-out, 2000ms filter ease-in-out,
+    2000ms -webkit-transform ease-in-out, 2000ms -webkit-filter ease-in-out;
   transition: 2000ms transform ease-in-out, 2000ms filter ease-in-out,
     2000ms -webkit-transform ease-in-out, 2000ms -webkit-filter ease-in-out;
   -webkit-animation: makeBooksVisible;
