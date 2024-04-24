@@ -1,0 +1,264 @@
+$primaryColor: #3c62c2;
+
+@keyframes makeBooksVisible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes tiltImage {
+  to {
+    transform: rotate(40deg);
+  }
+}
+
+@keyframes flyFromLeft {
+  from {
+    transform: translateX(-50rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes flyFromRight {
+  from {
+    transform: translateX(60rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/*NAVIGATION*/
+.hero-navigation {
+  width: 100%;
+  &__logo {
+    position: relative;
+    bottom: 15%;
+  }
+  &__link {
+    margin-right: 40px;
+    &:active,
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+  &__website-title {
+    color: black;
+    margin-right: 125px;
+    margin-left: 10px;
+  }
+  &__login-btn {
+    background-color: white;
+    color: black;
+    width: 138px;
+    height: 44px;
+    &:active {
+      background-color: #e7e7e7;
+    }
+  }
+}
+
+/*HERO SECTION*/
+.hero-content {
+  margin-top: 54px;
+}
+
+/*HERO LEFT SIDE*/
+.hero-section-left {
+  align-content: space-between;
+  width: 40%;
+  &__main-text {
+    font-size: 76px;
+    color: #181e4b;
+    line-height: 1.1;
+    &--favbook {
+      text-decoration: underline;
+    }
+  }
+  &__secondary-text {
+    width: 80%;
+    letter-spacing: -4%;
+  }
+  &__start-now-btn {
+    height: 60px;
+    width: 200px;
+    color: white;
+    justify-content: center;
+    gap: 0.5rem;
+    &:active {
+      background-color: $primaryColor;
+    }
+  }
+}
+
+/* HERO RIGHT SIDE */
+.hero-section-right {
+  position: relative;
+  width: 45%;
+  height: 650px;
+  &__picture {
+    position: absolute;
+    transition: 2000ms transform ease-in-out, 2000ms filter ease-in-out;
+    animation: makeBooksVisible;
+    animation-fill-mode: forwards;
+    animation-duration: 3000ms;
+    &:hover {
+      transform: scale(1.1);
+      filter: hue-rotate(-0.25turn);
+    }
+    &--dompet {
+      top: 28%;
+      right: 75%;
+    }
+    &--mba {
+      bottom: 15%;
+      right: 45%;
+    }
+    &--strangers {
+      top: 0;
+      right: 50%;
+    }
+    &--midnight {
+      top: 15%;
+      right: 20%;
+    }
+  }
+  &__cover-bottom {
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: -2;
+  }
+  &__cover-top {
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+/*FEATURES*/
+.feature-section-container {
+  gap: 25%;
+  &__feature-description {
+    width: 15%;
+  }
+
+  &__feature-header {
+    margin-top: 20px;
+    margin-bottom: 28px;
+    font-size: 24px;
+  }
+
+  &__feature-img {
+    filter: drop-shadow(3px 5px 10px #0000004d);
+    animation-name: tiltImage;
+    animation-duration: 1500ms;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    transition-duration: 1000ms;
+    transition-property: transform;
+    &:hover {
+      transform: rotate(5deg);
+    }
+  }
+}
+
+/*SERVICES*/
+.rent-info-section {
+  flex-wrap: wrap;
+  &__paragraph-container {
+    width: 25%;
+  }
+  &__h3 {
+    font-size: 32px;
+  }
+  &__img {
+    transition-property: transform;
+    &--move-left {
+      animation-name: flyFromLeft;
+      animation-duration: 3500ms;
+      transition-duration: 3000ms;
+    }
+    &--move-right {
+      animation-name: flyFromRight;
+      animation-duration: 3500ms;
+      transition-duration: 3000ms;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+/*REVIEW*/
+.review-cards-section {
+  height: 455px;
+  gap: 4.25%;
+}
+
+.review-card {
+  width: 30.5%;
+  height: 100%;
+  border: 1px solid #dedede;
+  overflow-y: hidden;
+  &__review-avatar {
+    width: 149px;
+    height: 149px;
+  }
+  &__reviewer-name {
+    color: #23a6f0;
+    margin-bottom: 15px;
+  }
+  &__review-text {
+    width: 55%;
+  }
+}
+
+/*LOCATION*/
+.location-section__map {
+  width: 100%;
+  height: 405px;
+  border: none;
+  margin-bottom: 240px;
+}
+
+/*FOOTER*/
+.home-footer-media-section {
+  justify-content: space-evenly;
+  &__social-icons {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    &--remove-fill {
+      fill: none;
+      stroke: black;
+      stroke-width: 42px;
+    }
+    &--margin {
+      margin-right: 1.5rem;
+    }
+  }
+  &__h4 {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+.home-footer-rights-section {
+  height: 120px;
+  &__text {
+    display: inline-block;
+    margin-top: 50px;
+    color: white;
+    font-size: 14px;
+  }
+}
+.home-footer-media-section__slogan {
+  font-size: 20px;
+}
