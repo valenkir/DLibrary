@@ -1,3 +1,5 @@
+@use "./variables.scss";
+
 .login-grid-container {
   display: grid;
   grid-template-areas: "header" "main" "footer";
@@ -18,19 +20,19 @@
 .login-form {
   height: 452px;
   width: 25rem;
-  border-top: 2px solid #4475f2;
+  border-top: 2px solid variables.$primaryColor;
   border-radius: 5px;
   padding: 2.4rem 2.2rem 0 2.2rem;
   margin-bottom: 50px;
-}
-.login-form__title {
-  margin-bottom: 15px;
-}
-.login-form__button {
-  height: 43px;
-  color: white;
+  &__title {
+    margin-bottom: 15px;
+  }
+  &__button {
+    height: 43px;
+    color: white;
+  }
 }
 
 .login-footer {
   margin-bottom: 40px;
-}/*# sourceMappingURL=login.css.map */
+}
