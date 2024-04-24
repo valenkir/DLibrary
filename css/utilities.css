@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+/*HELPER CLASSES*/
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-90 {
+  margin-top: 90px;
+}
+
+.mt-170 {
+  margin-top: 170px;
+}
+
+.mr-120 {
+  margin-right: 120px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.ms-120 {
+  margin-left: 120px;
+}
+
+.gap-20 {
+  gap: 20%;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-48 {
+  font-size: 48px;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.inactive-link-color {
+  color: #9a9ea6;
+}
+
+.btn-primary {
+  border: none;
+  border-radius: 10px;
+  transition-property: transform, background-color;
+  transition-duration: 1000ms;
+}
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+.primary-color {
+  color: #4475f2;
+}
+
+.primary-bg {
+  background-color: #4475f2;
+}
+
+.color-text-black {
+  color: black;
+}
+
+.line-height-1-9 {
+  line-height: 1.9;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.shadow {
+  box-shadow: 0.4px 0.7px 3.3px rgba(0, 0, 0, 0.0274509804), 2.9px 5.7px 8px rgba(0, 0, 0, 0.0392156863), 8.6px 17.1px 16px rgba(0, 0, 0, 0.0470588235), 20.2px 40px 31.6px rgba(0, 0, 0, 0.0509803922), 59px 117px 80px rgba(0, 0, 0, 0.0588235294);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.d-flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-justify-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.user-input {
+  height: 40px;
+  border-radius: 4px;
+  border: 1.5px solid #dedede;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #5e6282;
+  font-weight: 500;
+  padding-left: 14px;
+  box-sizing: border-box;
+}
+.user-input::-moz-placeholder {
+  font-size: 14px;
+  color: #9c9c9c;
+  margin-left: 0.5rem;
+}
+.user-input::placeholder {
+  font-size: 14px;
+  color: #9c9c9c;
+  margin-left: 0.5rem;
+}
+.user-input:focus {
+  border-color: #4475f2;
+}
+.user-input:focus::-moz-placeholder {
+  color: transparent;
+}
+.user-input:focus::placeholder {
+  color: transparent;
+}
+.user-input:invalid:not(focus) {
+  border-color: #dedede;
+}
+.user-input:invalid:focus {
+  border-color: #9a0303;
+}
+.user-input:invalid:not(focus):not(:-moz-placeholder-shown) {
+  border-color: #9a0303;
+}
+.user-input:invalid:not(focus):not(:placeholder-shown) {
+  border-color: #9a0303;
+}
+.user-input__field-icon {
+  height: 1rem;
+  width: 1rem;
+  bottom: 0.7rem;
+  right: 0.5rem;
+}
+.user-input__field-icon:hover {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  color: #5e6282;
+  padding-top: 4.4rem;
+}/*# sourceMappingURL=utilities.css.map */

@@ -1,0 +1,166 @@
+@use "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+/*HELPER CLASSES*/
+@each $mt-value in variables.$mtValues {
+  .mt-#{$mt-value} {
+    margin-top: #{$mt-value}px;
+  }
+}
+
+.mr-120 {
+  margin-right: 120px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.ms-120 {
+  margin-left: 120px;
+}
+
+.gap-20 {
+  gap: 20%;
+}
+
+@each $fontSize in variables.$fontSizes {
+  .fs-#{$fontSize} {
+    font-size: #{$fontSize}px;
+  }
+}
+
+@each $fontWeight in variables.$fontWeights {
+  .fw-#{$fontWeight} {
+    font-weight: $fontWeight;
+  }
+}
+
+.inactive-link-color {
+  color: #9a9ea6;
+}
+
+.btn-primary {
+  border: none;
+  border-radius: 10px;
+  transition-property: transform, background-color;
+  transition-duration: 1000ms;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.primary-color {
+  color: variables.$primaryColor;
+}
+
+.primary-bg {
+  background-color: variables.$primaryColor;
+}
+
+.color-text-black {
+  color: black;
+}
+
+.line-height-1-9 {
+  line-height: 1.9;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.shadow {
+  box-shadow: 0.4px 0.7px 3.3px #00000007, 2.9px 5.7px 8px #0000000a,
+    8.6px 17.1px 16px #0000000c, 20.2px 40px 31.6px #0000000d,
+    59px 117px 80px #0000000f;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.d-flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-justify-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.user-input {
+  height: 40px;
+  border-radius: 4px;
+  border: 1.5px solid #dedede;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #5e6282;
+  font-weight: 500;
+  padding-left: 14px;
+  box-sizing: border-box;
+  &::placeholder {
+    font-size: 14px;
+    color: #9c9c9c;
+    margin-left: 0.5rem;
+  }
+  &:focus {
+    border-color: variables.$primaryColor;
+  }
+  &:focus::placeholder {
+    color: transparent;
+  }
+  &:invalid:not(focus) {
+    border-color: #dedede;
+  }
+  &:invalid:focus {
+    border-color: variables.$errorColor;
+  }
+  &:invalid:not(focus):not(:placeholder-shown) {
+    border-color: variables.$errorColor;
+  }
+  &__field-icon {
+    height: 1rem;
+    width: 1rem;
+    bottom: 0.7rem;
+    right: 0.5rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  color: #5e6282;
+  padding-top: 4.4rem;
+}

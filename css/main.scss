@@ -1,4 +1,4 @@
-$primaryColor: #3c62c2;
+@use "./variables.scss";
 
 @keyframes makeBooksVisible {
   from {
@@ -44,7 +44,7 @@ $primaryColor: #3c62c2;
     margin-right: 40px;
     &:active,
     &:hover {
-      color: $primaryColor;
+      color: variables.$secondaryColor;
     }
   }
   &__website-title {
@@ -91,7 +91,7 @@ $primaryColor: #3c62c2;
     justify-content: center;
     gap: 0.5rem;
     &:active {
-      background-color: $primaryColor;
+      background-color: variables.$secondaryColor;
     }
   }
 }
