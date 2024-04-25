@@ -17,10 +17,13 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/utilities.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/script.js" type="text/javascript"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRIWEhRkmeeKwXl7f2g6i_j6BGUP8pIqw&loading=async&callback=initMap"
+    ></script>
+    <script src="./js/main.js" type="text/javascript" defer></script>
   </head>
   <body>
     <img
@@ -334,13 +337,7 @@
           Location
         </h2>
         <h3 class="fw-800 fs-48 color-text-black">Our Library Location</h3>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.576932636207!2d106.63517767470177!3d-6.187328060621259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f929162547c7%3A0xbbf35137362e584d!2sState%20Vocational%20High%20School%204%20Tangerang!5e0!3m2!1sen!2sua!4v1708942631381!5m2!1sen!2sua"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          class="location-section__map mt-90 shadow"
-        ></iframe>
+        <div id="map" class="location-section__map mt-90 shadow"></div>
       </section>
     </main>
     <footer id="home-footer" class="home-footer">
